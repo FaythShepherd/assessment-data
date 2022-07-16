@@ -1,0 +1,7 @@
+CREATE TABLE cities (city_ID SERIAL,
+name VARCHAR(100),
+rating INT,
+country_id INT,
+PRIMARY KEY (city_ID),
+FOREIGN KEY (country_id) REFERENCES countries (country_id))
+
